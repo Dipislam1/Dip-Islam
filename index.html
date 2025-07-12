@@ -1,21 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>EarnZone | Withdraw</title>
+  <title>EarnZone | Dashboard</title>
   <style>
     body { font-family: sans-serif; text-align: center; padding: 40px; }
-    input, button { margin: 10px; padding: 10px; width: 250px; }
+    .balance { font-size: 24px; margin: 20px; }
+    #timer { font-size: 20px; color: green; margin-top: 10px; }
   </style>
 </head>
 <body>
-  <h2>💵 Withdraw Your Earning</h2>
-  <form>
-    <input type="text" placeholder="Your Name"><br>
-    <input type="text" placeholder="Bkash/Nagad Number"><br>
-    <input type="number" placeholder="Amount (Minimum 200)"><br>
-    <button type="submit">Submit Request</button>
-  </form>
-  <br>
-  <a href="dashboard.html">⬅️ Back to Dashboard</a>
+  <h1>🎉 Welcome to EarnZone</h1>
+  <div class="balance">💰 Your Balance: <span id="balance">0.00</span> টাকা</div>
+
+  <button onclick="startAd()">▶️ Watch Ad</button>
+  <div id="timer"></div>
+
+  <br><br>
+  <button onclick="window.location.href='withdraw.html'">💵 Withdraw</button>
+  <p>🔗 Your Refer Link: <code>earnzone.com/?ref=yourname</code></p>
+
+<script>
+  let balance = 0;
+  function startAd() {
+    let time = 30;
+    document.getElementById("timer").innerText = "⏳ Ad running... " + time + "s";
+
+    let x = setInterval(() => {
+      time--;
+      document.getElementById("timer").innerText = "⏳ Ad running... " + time + "s";
+      if (time <= 0) {
+        clearInterval(x);
+        balance += 0.50;
+        document.getElementById("balance").innerText = balance.toFixed(2);
+        document.getElementById("timer").innerText = "✅ Ad completed! +0.50 টাকা";
+      }
+    }, 1000);
+  }
+</script>
 </body>
 </html>
