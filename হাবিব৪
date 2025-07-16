@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EarnZone Withdraw</title>
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      background-color: #f9f9f9;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      max-width: 400px;
+      margin: auto;
+      margin-top: 30px;
+    }
+
+    .option {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .option img {
+      width: 60px;
+      margin-bottom: 10px;
+    }
+
+    .option button {
+      padding: 10px 20px;
+      background-color: #1d4ed8;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .option button:hover {
+      background-color: #2563eb;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>💸 ক্যাশ আউট হবে বিকাশে অথবা নগদে</h2>
+
+  <div class="grid">
+    <div class="option">
+      <img src="https://i.ibb.co/S64g3Z0/recharge.png" alt="রিচার্জ">
+      <p>মোবাইল রিচার্জ ২০৳</p>
+      <button>উইউ করুন</button>
+    </div>
+    <div class="option">
+      <img src="https://i.ibb.co/d5W3fSx/bkash.png" alt="বিকাশ">
+      <p>বিকাশ ৫০৳</p>
+      <button>উইউ করুন</button>
+    </div>
+    <div class="option">
+      <img src="https://i.ibb.co/Zg9jQKb/nagad.png" alt="নগদ">
+      <p>নগদ ৫০৳</p>
+      <button>উইউ করুন</button>
+    </div>
+    <div class="option">
+      <img src="https://i.ibb.co/k4VnbzH/pubg.png" alt="PUBG">
+      <p>385 UC</p>
+      <button>উইউ করুন</button>
+    </div>
+    <div class="option">
+      <img src="https://i.ibb.co/m8Wm0yM/ff.png" alt="FF">
+      <p>Free Fire 210 Diamond</p>
+      <button>উইউ করুন</button>
+    </div>
+  </div>
+
+</body>
+</html>
